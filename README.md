@@ -1,22 +1,23 @@
-# Cryocooler ML Model for predicting minimum temperature
+# Cryocooler ML – Predicting Minimum Temperature
 
-This repository contains machine learning models for predicting cryocooler performance, specifically for the first stage cryocooler of a PT415 Pulse Tube Cryocooler used in a Dilution Refrigerator. The data is from CFD analysis of varying loads for five seconds on ANSYS Fluent. 
+This repository contains machine learning models for predicting cryocooler performance, specifically for the first stage cryocooler of a PT415 Pulse Tube Cryocooler used in a Dilution Refrigerator.
+The dataset originates from CFD simulations (ANSYS Fluent) of varying loads over five seconds.
 
 ## 📂 Project Structure
    cryocooler_min_temp_prediction/
 │
-├── src/
-│ └── Cryocooler_code.py
+├── src/                   
+│   └── Cryocooler_code.py
 │
-├── figures/ 
+├── figures/               
 │
-├── data/ # Local datasets (not uploaded)
-│ └── .gitkeep
+├── data/                  # Local datasets (not uploaded)
+│   └── .gitkeep
 │
-├── README.md 
-├── requirements.txt 
-├── .gitignore 
-└── LICENSE 
+├── README.md
+├── requirements.txt
+├── .gitignore
+└── LICENSE
 
 
 ## Features
@@ -36,16 +37,32 @@ This repository contains machine learning models for predicting cryocooler perfo
 
 Clone the repository:
 
-```bash
-git clone https://https://github.com/TanishaS77/Cryocooler_min_temp
+git clone https://github.com/TanishaS77/Cryocooler_min_temp.git
 cd Cryocooler_min_temp
 
+### Create virtual environment
 python -m venv venv
-source venv/bin/activate   # On Linux/Mac
-venv\Scripts\activate      # On Windows
 
+### Activate
+source venv/bin/activate   # Linux/Mac
+venv\Scripts\activate      # Windows
+
+### Install dependencies
 pip install -r requirements.txt
 
+### Run training
 python src/Cryocooler_code.py
+
+
+##📊 Results
+-Actual vs Predicted plots
+-Residual plots
+-Feature importance (RF, XGBoost)
+
+##License
+This project is licensed under the MIT License – see the LICENSE file for details.
+
+##Contributions, issues, and feature requests are welcome!
+
 
  

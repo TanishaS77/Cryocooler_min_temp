@@ -5,33 +5,21 @@ The dataset originates from CFD simulations (ANSYS Fluent) of varying loads over
 
 ## 📂 Project Structure
 
-cryocooler\_min\_temp\_prediction/
+\- `src/` – contains `Cryocooler\_code.py`
 
-│
+\- `figures/` – saved plots and results
 
-├── src/                   
+\- `data/` – local datasets (not uploaded)  
 
-│   └── Cryocooler\_code.py
+&nbsp; - `.gitkeep` 
 
-│
+\- `README.md`
 
-├── figures/               
+\- `requirements.txt`
 
-│
+\- `.gitignore`
 
-├── data/                  # Local datasets (not uploaded)
-
-│   └── .gitkeep
-
-│
-
-├── README.md
-
-├── requirements.txt
-
-├── .gitignore
-
-└── LICENSE
+\- `LICENSE`
 
 
 
@@ -78,13 +66,19 @@ python src/Cryocooler\_code.py
 
 
 
-\##📊 Results
+
+
+\## 📊 Results
 -Actual vs Predicted plots
 -Residual plots
 -Feature importance (RF, XGBoost)
 
-\##License
+
+
+\## License
 This project is licensed under the MIT License – see the LICENSE file for details.
 
-\##Contributions, issues, and feature requests are welcome!
+
+
+\## Contributions, issues, and feature requests are welcome!
 
